@@ -1,0 +1,278 @@
+.cont{
+    position: relative;
+    height: 450px;
+    padding: 10px 25px;
+    margin: 10vh auto;
+    background:#D2CECE;
+    border-radius: 8px;
+  }
+.contain{
+    position: relative;
+    height: 300px;
+    padding: 10px 25px;
+    margin: 22vh auto;
+    background:#D2CECE;
+    border-radius: 8px;
+
+}
+
+
+.link {
+    color: #9369A6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.jaco-button {
+    font-family: ' open sans';
+    font-weight: 100;
+    transition: color 100ms ease-in-out, background-color 100ms ease-in-out;
+    padding: 16px 22px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.jaco-button:active {
+    background-color: #2385ff;
+}
+
+.jaco-green-button {
+    color: white;
+    background-color: #9369A6;
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.jaco-green-button:hover {
+    background-color: #9369A6;
+}
+
+.jaco-checkbox {
+    display: flex;
+    position: relative;
+}
+
+.jaco-checkbox input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.jaco-checkbox input+label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #9369A6;
+    border-radius: 6px;
+}
+
+.jaco-checkbox input+label:after {
+    content: '';
+    opacity: 0;
+}
+
+.jaco-checkbox input:checked+label,
+.jaco-checkbox input:active+label {
+    background-color: #9369A6;
+}
+
+.jaco-checkbox input:checked+label:after,
+.jaco-checkbox input:active+label:after {
+    content: '✔' ;
+    color: white;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    font-size: 10px;
+    line-height: 0.8;
+    opacity: 1;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    margin: auto;
+    font-weight: 500;
+}
+
+.progress-bar .arrow {
+    font-size: 0.4rem;
+    font-weight: 100;
+    color: #D2CECE;
+}
+
+.progress-bar .circle {
+    text-align: center;
+    border: 1px solid #9369A6;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #9369A6;
+    font-size: 0.22rem;
+    color: white;
+}
+
+.progress-bar .circle.disabled {
+    background: #D2CECE;
+    border: 1px solid #D2CECE;
+}
+
+.progress-bar .circle.checked {
+    background: white;
+    position: relative;
+}
+
+.progress-bar .circle.checked:after {
+    content: ' ✔' ;
+    color: #9369A6;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
+    line-height: 0.8;
+    opacity: 1;
+}
+
+:root {
+    font-size:45px;
+    font-family: open sans;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 0.65rem;
+    font-weight: 100;
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.signup-page .title {
+    text-align: center;
+}
+
+.signup-page .signup-form {
+    width: 360px;
+    margin: auto;
+    border: 0;
+}
+
+.signup-page .signup-form label {
+    font-size: 0.31rem;
+}
+
+.signup-page .signup-form input {
+    outline: none;
+    border: 1px solid #BEBEBE;
+    font-size: 0.35rem;
+    
+}
+
+.signup-page .signup-form input:focus {
+    border: 1.5px solid #262626;
+}
+
+.signup-page .signup-form .form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+}
+
+.signup-page .signup-form .form-field.readonly-field .input-wrapper:before {
+    color:#909090;
+    
+}
+.signup-page .signup-form .form-field.readonly-field .input-wrapper:after {
+    color:#9369A6;
+}
+
+.signup-page .signup-form .form-field.readonly-field .input-wrapper input {
+    background: #F2FFF6;
+    border: 1px solid #9369A6;
+}
+
+.signup-page .signup-form .form-field.readonly-field .input-wrapper input:placeholder-shown {
+    color: #9369A6;
+}
+
+.signup-page .signup-form .form-field:nth-last-child(3) {
+    margin: 0 0 30px 0;
+}
+
+.signup-page .signup-form .form-field label {
+    margin: 0 0 5px 0;
+}
+
+.signup-page .signup-form .form-field .input-wrapper {
+    display: flex;
+    height: 50px;
+    position: relative;
+}
+
+.signup-page .signup-form .form-field .input-wrapper:before {
+    color: #909090;
+    content: "\f1b0";
+    font-size: 30px;
+    font-family: FontAwesome;
+    position: absolute;
+    padding: 10px;
+}
+
+.signup-page .signup-form .form-field .input-wrapper input {
+    padding-left: 40px;
+    padding-right: 10px;
+    outline: none;
+    flex-basis: 100%;
+}
+
+.signup-page .signup-form .form-field-i-agree .i-agree-label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+.signup-page .signup-form .form-field-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.signup-page .signup-form .form-field-row .last-name-field .input-wrapper:before {
+    display: none;
+}
+
+.signup-page .signup-form .form-field-row .last-name-field .input-wrapper input {
+    border-left: 0;
+    flex: 9 1 calc(59.5%);
+}
+
+.signup-page .signup-form .form-field-row .first-name-field {
+    display: flex;
+}
+
+.signup-page .signup-form .form-field-row .first-name-field .input-wrapper {
+    width: 180px;
+    margin-right: 0;
+    display: flex;
+}
+
+.signup-page .signup-form .form-field-row .first-name-field .input-wrapper input {
+    flex: 1 1 calc(61%);
+}
+
+.signup-page .signup-form .form-field-row .form-field .input-wrapper {
+    display: flex;
+}
+
+.signup-page .signup-form .form-field-row .form-field .input-wrapper input {
+    text-transform: capitalize;
+}
+
+.signup-page .signup-form .send-button input {
+    border: none;
+}
+
